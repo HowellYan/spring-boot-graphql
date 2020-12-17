@@ -59,4 +59,11 @@ public class GraphQLDataFetchers {
                     .orElse(null);
         };
     }
+
+    public DataFetcher getBookListDataFetcher() {
+        return dataFetchingEnvironment -> {
+            return books;
+        };
+    }
+
 }
