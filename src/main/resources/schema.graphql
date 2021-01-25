@@ -3,7 +3,8 @@ type BookList {
 }
 
 type Query {
-  bookById(id: ID): Book
+  bookById(id: ID): Book,
+  bookList(size: Int, current: Int): [Book]
 }
 
 type Book {
